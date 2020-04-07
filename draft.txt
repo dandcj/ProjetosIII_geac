@@ -1,0 +1,31 @@
+void callback(char* topic, byte* payload, unsigned int length) 
+{
+  
+  Serial.print("Message arrived [");
+  Serial.print(topic);
+  Serial.print("] ");
+  for (int i = 0; i < length; i++) 
+  {
+    Serial.print((char)payload[i]);
+  }
+  Serial.println();
+
+  // Switch on the LED if 1 was received as first character
+  if ((char)payload[0] == '1') 
+  {
+    digitalWrite(LED_PIN, HIGH);   
+    ledState = 1;
+    char payLoad[1];
+    itoa(ledState, payLoad, 10);
+    client.publish(pubTopic, payLoad);
+  } 
+  else 
+  {
+    digitalWrite(LED_PIN, LOW); 
+    ledState = 0;
+    char payLoad[1];
+    itoa(ledState, payLoad, 10);
+    client.publish(pubTopic, payLoad);
+  }
+
+}
