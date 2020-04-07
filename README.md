@@ -16,3 +16,7 @@ char mqttUSERNAME[] = "";
 
 char mqttPASSWORD[] = "";
 ```
+
+###### Hardware utilizados
+
+Arduino nano IOT 33 [link](https://store.arduino.cc/usa/nano-33-iot)
