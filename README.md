@@ -3,7 +3,7 @@ Simulador AC inverter vs ON/OFF
 
 Para funcionar o programa criar um arquivo na pasta raiz:
 
-credentials.h
+**credentials.h**
 
 ```
 char networkSSID[] = "NOME DA SUA SSID"; // nome da rede wifi
