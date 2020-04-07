@@ -34,8 +34,15 @@ char mqttPASSWORD[] = "";
 
 ###### Hardwares utilizados
 
+- RaspBerryPI 3 [link]9https://www.raspberrypi.org/products/raspberry-pi-3-model-b/0
 - Arduino nano IOT 33 [link](https://store.arduino.cc/usa/nano-33-iot)
 - Ponteh l298n [link](https://www.baudaeletronica.com.br/driver-motor-ponte-h-l298n.html)
 - Ponteh BTS7960 [link](https://produto.mercadolivre.com.br/MLB-1165220526-modulo-driver-ponte-h-43a-bts7960-ibt2-bts7960b-arduino-_JM?quantity=1)
+
+###### Softwares utilizados
+
+- VSconde com extensão Arduino
+- Node-red para interface web e mobile
+- PowerBi para gráficos
 
 
